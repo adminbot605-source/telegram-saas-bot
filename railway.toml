@@ -1,0 +1,17 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "python -m bot.main"
+healthcheckPath = "/health"
+healthcheckTimeout = 60
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
+
+[[services]]
+name = "bot"
+
+[services.env]
+AUTO_MIGRATE = "true"
+WEB_SERVER_HOST = "0.0.0.0"
