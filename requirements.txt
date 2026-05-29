@@ -6,7 +6,7 @@ asyncpg==0.30.0
 redis==5.2.0
 apscheduler==3.10.4
 pydantic==2.4.1,<2.10
-pydantic-settings==2.6.1
+pydantic-settings==2.2.1
 python-dotenv==1.0.1
 loguru==0.7.2
 psycopg2-binary==2.9.10
